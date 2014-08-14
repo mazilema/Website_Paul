@@ -1,0 +1,115 @@
+@import "bower_components/bootstrap/less/bootstrap.less";
+
+/* When upload delete */
+
+/* ======================= */
+
+.content-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    border: 0;
+    padding: 15px 20px;
+    margin: 0 15px;
+}
+
+.btn-primary {
+    background-color: darken(@brand-primary, 4%);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-size: 18px;
+    > .container {
+        width: 100%;
+    }
+}
+
+#logo-bg {
+    height: 320px;
+    background-color: darken(@brand-primary, 4%);
+}
+
+#content {
+    
+}
+
+blockquote {
+    border-left: 0;
+    padding: 0;
+    footer {
+        color: #000;
+    }
+}
+
+#beta {
+    background-color: lighten(@brand-primary, 5%);
+}
+
+#hello {
+    background-color: darken(@brand-primary, 4%);
+}
+
+#contact {
+    background-color: lighten(@brand-primary, 5%);
+}
+
+@media (max-width: @screen-sm) {
+    #logo-bg {
+        height: 320px;        
+        #logo {
+            width: 200px;
+            padding-top: 60px;
+        }
+    }
+    #beta, #hello, #contact {
+        padding-left: 15px;
+    }
+    #beta {
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    #hello {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    #contact {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+}
+
+@media (min-width: @screen-sm) and (max-width: @screen-md) {
+     #logo-bg {
+        height: 370px;
+        #logo {
+            width: 250px;
+            padding-top: 60px;
+        }
+    }
+}
+
+@media (min-width: @screen-md) and (max-width: @screen-lg) {
+     #logo-bg {
+        height: 420px;
+        #logo {
+            width: 300px;
+            padding-top: 60px;
+        }
+    }
+}
+
+@media (min-width: @screen-lg) {
+    #logo-bg {
+        height: 470px;
+        #logo {
+            width: 350px;
+            padding-top: 60px;
+        }
+    }
+}
