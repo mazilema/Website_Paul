@@ -1,23 +1,6 @@
 @import "bower_components/bootstrap/less/bootstrap.less";
 
-/* When upload delete */
-
-/* ======================= */
-
-.content-center {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn {
-    border: 0;
-    padding: 15px 20px;
-    margin: 0 15px;
-}
-
-.btn-primary {
-    background-color: darken(@brand-primary, 4%);
-}
+@main-color: #2980b9;
 
 html, body {
     margin: 0;
@@ -25,58 +8,121 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     color: #000;
     font-size: 18px;
+    background-color: @main-color;
     > .container {
         width: 100%;
     }
 }
 
-#logo-bg {
-    height: 320px;
-    background-color: darken(@brand-primary, 4%);
+.content-center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#content {
+#name {
+    color: #333;
+    font-size: 1.5rem;
     
+}
+
+.btn {
+    padding: 10px 15px;
+    margin: 0 15px;
+}
+
+.btn-primary {
+    background-color: @main-color;
+    &:active {
+        background-color: @main-color;
+    }
+    /*
+    background-color: darken(@brand-primary, 4%);
+    */
+}
+
+#logo-bg {
+    height: 320px;
+    /*
+    background-color: darken(@brand-primary, 4%);
+    */
 }
 
 blockquote {
     border-left: 0;
     padding: 0;
+    font-size: 1.1rem;
     footer {
         color: #000;
     }
 }
 
 #beta {
-    background-color: lighten(@brand-primary, 5%);
+    /*background-color: lighten(@brand-primary, 5%);*/
+    background-color: lighten(@main-color, 15%);
+    color: #FFF;
 }
 
 #hello {
-    background-color: darken(@brand-primary, 4%);
+    background-color: @main-color;
+    font-size: 1.1rem;
+    color: #fff;
+    a {
+        text-decoration: none;
+        color: #fff;
+        border-bottom: 2px solid #333;
+        padding: 0 4px;
+        &:hover {
+            text-decoration: none;
+            color: #333;
+            background-color: #fff;
+            border-bottom: 0;
+            padding: 0 4px;
+        }
+        &:focus {
+            text-decoration: none;
+            color: #fff;
+            border-bottom: 2px solid #333;
+            padding: 0 4px;
+            outline: none;
+        }
+    }
 }
 
 #contact {
+    background-color: lighten(@main-color, 15%);
+    /*
     background-color: lighten(@brand-primary, 5%);
+    */
 }
 
 @media (max-width: @screen-sm) {
     #logo-bg {
         height: 320px;        
         #logo {
-            width: 200px;
-            padding-top: 60px;
+            width: 180px;
+            padding-top: 40px;
         }
     }
-    #beta, #hello, #contact {
-        padding-left: 15px;
-    }
     #beta {
+        padding-left: 5%;
         padding-top: 25px;
         padding-bottom: 10px;
     }
     #hello {
+        padding-left: 5%;
         padding-top: 25px;
         padding-bottom: 25px;
+    }
+    #hobby {
+        padding-bottom: 25px;
+        img {
+            padding-top: 20px;
+        }
+        #hobby-text {
+            padding-left: 5%;
+            color: #fff;
+            font-size: 1.1rem;
+        }
     }
     #contact {
         padding-top: 35px;
@@ -88,13 +134,11 @@ blockquote {
      #logo-bg {
         height: 370px;
         #logo {
-            width: 250px;
+            width: 150px;
             padding-top: 60px;
         }
     }
-    #beta, #hello, #contact {
-        padding-left: 15px;
-    }
+    
     #beta {
         padding-top: 25px;
         padding-bottom: 10px;
@@ -113,13 +157,11 @@ blockquote {
      #logo-bg {
         height: 420px;
         #logo {
-            width: 300px;
+            width: 200px;
             padding-top: 60px;
         }
     }
-    #beta, #hello, #contact {
-        padding-left: 15px;
-    }
+    
     #beta {
         padding-top: 25px;
         padding-bottom: 10px;
@@ -138,13 +180,11 @@ blockquote {
     #logo-bg {
         height: 470px;
         #logo {
-            width: 350px;
+            width: 250px;
             padding-top: 60px;
         }
     }
-    #beta, #hello, #contact {
-        padding-left: 15px;
-    }
+    
     #beta {
         padding-top: 25px;
         padding-bottom: 10px;
