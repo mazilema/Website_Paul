@@ -1,200 +1,139 @@
 @import "bower_components/bootstrap/less/bootstrap.less";
 
-@main-color: #2980b9;
+// Variables
+@logo-size: 150px;
+@font-size-base: 14px;
 
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #000;
-    font-size: 18px;
-    background-color: @main-color;
-    > .container {
-        width: 100%;
-    }
-}
+@montserrat: 'Montserrat', sans-serif;
+@roboto-slab: 'Roboto Slab', serif;
 
 .content-center {
     margin-left: auto;
     margin-right: auto;
 }
 
-#name {
-    color: #333;
-    font-size: 1.5rem;
-    
+
+hr { 
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+
+
+// All sizes
+#my-name {
+    font-family: @montserrat;
+    font-size: @font-size-base + 6px;
+}
+
+#beta, #hello, #hobby {
+    font-family: @roboto-slab;
+    font-size: @font-size-base + 3px;
+    text-align: left;
+}
+
+#beta {
+    blockquote {
+        footer {
+            font-size: @font-size-base + 1px;
+        }
+    }
+}
+
+#hello {
+    a {
+        text-decoration: none;
+    }
+}
+
+#hello, #hobby {
+    &.row {
+        padding: 15px;
+    }
 }
 
 .btn {
-    padding: 10px 15px;
-    margin: 0 15px;
+    border-radius: 0;
 }
 
-.btn-primary {
-    background-color: @main-color;
-    &:active {
-        background-color: @main-color;
+#fivepxl {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contact {
+    margin-bottom: 30px;
+    .btn {
+        margin: 0 20px;
+        font-size: @font-size-base + 2px;
+        padding: 10px 15px;
     }
-    /*
-    background-color: darken(@brand-primary, 4%);
-    */
-}
-
-#logo-bg {
-    height: 320px;
-    /*
-    background-color: darken(@brand-primary, 4%);
-    */
 }
 
 blockquote {
     border-left: 0;
-    padding: 0;
-    font-size: 1.1rem;
-    footer {
-        color: #000;
-    }
 }
 
-#beta {
-    /*background-color: lighten(@brand-primary, 5%);*/
-    background-color: lighten(@main-color, 15%);
-    color: #FFF;
-}
+// All sizes
 
-#hello {
-    background-color: @main-color;
-    font-size: 1.1rem;
-    color: #fff;
-    a {
-        text-decoration: none;
-        color: #fff;
-        border-bottom: 2px solid #333;
-        padding: 0 4px;
-        &:hover {
-            text-decoration: none;
-            color: #333;
-            background-color: #fff;
-            border-bottom: 0;
-            padding: 0 4px;
-        }
-        &:focus {
-            text-decoration: none;
-            color: #fff;
-            border-bottom: 2px solid #333;
-            padding: 0 4px;
-            outline: none;
-        }
-    }
-}
-
-#contact {
-    background-color: lighten(@main-color, 15%);
-    /*
-    background-color: lighten(@brand-primary, 5%);
-    */
-}
-
-@media (max-width: @screen-sm) {
-    #logo-bg {
-        height: 320px;        
-        #logo {
-            width: 180px;
-            padding-top: 40px;
-        }
-    }
-    #beta {
-        padding-left: 5%;
-        padding-top: 25px;
-        padding-bottom: 10px;
-    }
-    #hello {
-        padding-left: 5%;
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    #hobby {
-        padding-bottom: 25px;
-        img {
-            padding-top: 20px;
-        }
-        #hobby-text {
-            padding-left: 5%;
-            color: #fff;
-            font-size: 1.1rem;
-        }
-    }
-    #contact {
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-}
-
-@media (min-width: @screen-sm) and (max-width: @screen-md) {
-     #logo-bg {
-        height: 370px;
-        #logo {
-            width: 150px;
-            padding-top: 60px;
-        }
-    }
-    
-    #beta {
-        padding-top: 25px;
-        padding-bottom: 10px;
-    }
-    #hello {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    #contact {
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-}
-
-@media (min-width: @screen-md) and (max-width: @screen-lg) {
-     #logo-bg {
-        height: 420px;
-        #logo {
-            width: 200px;
-            padding-top: 60px;
-        }
-    }
-    
-    #beta {
-        padding-top: 25px;
-        padding-bottom: 10px;
-    }
-    #hello {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    #contact {
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-}
-
+/* LG */
 @media (min-width: @screen-lg) {
     #logo-bg {
-        height: 470px;
+        margin-top: 50px;
+        margin-bottom: 10px;
         #logo {
-            width: 250px;
-            padding-top: 60px;
+            width: @logo-size + 150px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
-    
+    #my-name {
+        font-size: @font-size-base + 50px;
+    }
     #beta {
-        padding-top: 25px;
-        padding-bottom: 10px;
+        blockquote {
+            font-size: @font-size-base + 5px;
+        }
     }
-    #hello {
-        padding-top: 25px;
-        padding-bottom: 25px;
+}
+
+/* MD */
+@media (min-width: @screen-md) and (max-width: @screen-lg) {
+    #logo-bg {
+        margin-top: 50px;
+        margin-bottom: 50px;        #logo {
+            width: @logo-size + 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
-    #contact {
-        padding-top: 35px;
-        padding-bottom: 35px;
+}
+
+/* SM */
+@media (min-width: @screen-sm) and (max-width: @screen-md) {
+    #logo-bg {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        #logo {
+            width: @logo-size + 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+/* XS */
+@media (max-width: @screen-sm) {
+    #logo-bg {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        #logo {
+            width: @logo-size;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
     }
 }
