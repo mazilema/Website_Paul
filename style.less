@@ -19,16 +19,19 @@ hr {
     background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
     background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
     background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    &.divider {
+        width: 75%;
+    }
+}
 
 
 // All sizes
 #my-name {
     font-family: @montserrat;
-    font-size: @font-size-base + 6px;
 }
 
-#beta, #hello, #hobby {
+.content {
     font-family: @roboto-slab;
     font-size: @font-size-base + 3px;
     text-align: left;
@@ -48,7 +51,7 @@ hr {
     }
 }
 
-#hello, #hobby {
+#hello, #work, #projects {
     &.row {
         padding: 15px;
     }
@@ -58,17 +61,65 @@ hr {
     border-radius: 0;
 }
 
-#fivepxl {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 #contact {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     .btn {
-        margin: 0 20px;
+        margin: 20px;
         font-size: @font-size-base + 2px;
         padding: 10px 15px;
+    }
+}
+
+#projects {
+    #projects-text {
+        display: inline-block;
+    }
+    ul {
+        margin-top: 40px;
+        margin-bottom: 0;
+        li {
+
+            padding: 0 20px;
+        }
+    }
+    #project-success {
+        .text-success {
+            color: #5CB85C;
+        }
+        .text-warning {
+            color: darken(#F0AD4E, 10%);
+            opacity: 0.5;
+        }
+        .text-danger {
+            color: #D9534F;
+            opacity: 0.5;
+        }
+    }
+    #project-warning {
+        .text-success {
+            color: #5CB85C;
+            opacity: 0.5;
+        }
+        .text-warning {
+            color: darken(#F0AD4E, 10%);
+        }
+        .text-danger {
+            color: #D9534F;
+            opacity: 0.5;
+        }
+    }
+    #project-danger {
+        .text-success {
+            color: #5CB85C;
+            opacity: 0.5;
+        }
+        .text-warning {
+            color: darken(#F0AD4E, 10%);
+            opacity: 0.5;
+        }
+        .text-danger {
+            color: #D9534F;
+        }
     }
 }
 
@@ -84,18 +135,27 @@ blockquote {
         margin-top: 50px;
         margin-bottom: 10px;
         #logo {
-            width: @logo-size + 150px;
+            width: @logo-size + 130px;
             margin-left: auto;
             margin-right: auto;
         }
     }
+    #hello {
+        font-size: @font-size-base + 5px;
+        &.row {
+            padding: 30px;
+        }
+    }
     #my-name {
-        font-size: @font-size-base + 50px;
+        font-size: @font-size-base + 26px;
     }
     #beta {
         blockquote {
             font-size: @font-size-base + 5px;
         }
+    }
+    #github {
+        padding-right: 20px;
     }
 }
 
@@ -103,10 +163,19 @@ blockquote {
 @media (min-width: @screen-md) and (max-width: @screen-lg) {
     #logo-bg {
         margin-top: 50px;
-        margin-bottom: 50px;        #logo {
+        margin-bottom: 50px;
+        #logo {
             width: @logo-size + 100px;
             margin-left: auto;
             margin-right: auto;
+        }
+    }
+    #my-name {
+        font-size: @font-size-base + 18px;
+    }
+    #hello {
+        &.row {
+            padding: 30px;
         }
     }
 }
@@ -122,6 +191,9 @@ blockquote {
             margin-right: auto;
         }
     }
+    #my-name {
+        font-size: @font-size-base + 12px;
+    }
 }
 
 /* XS */
@@ -135,5 +207,11 @@ blockquote {
             margin-right: auto;
         }
         
+    }
+    #my-name {
+        font-size: @font-size-base + 6px;
+    }
+    #fivepxl, #GitHub {
+        margin-bottom: 20px;
     }
 }
