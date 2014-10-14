@@ -64,9 +64,10 @@ hr {
 #contact {
     margin-bottom: 20px;
     .btn {
-        margin: 20px;
+        margin: 20px 20px 10px;
         font-size: @font-size-base + 2px;
         padding: 10px 15px;
+        font-family: @montserrat;
     }
 }
 
@@ -123,8 +124,23 @@ hr {
     }
 }
 
+#xing {
+    font-family: Helvetica;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 78px;
+    color: #151013;
+}
+
 blockquote {
     border-left: 0;
+}
+
+#impressum {
+    font-size: @font-size-base + 2px;
+    .list-unstyled {
+        margin-top: 30px;
+    }
 }
 
 // All sizes
@@ -135,7 +151,7 @@ blockquote {
         margin-top: 50px;
         margin-bottom: 10px;
         #logo {
-            width: @logo-size + 130px;
+            width: @logo-size + 100px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -147,15 +163,23 @@ blockquote {
         }
     }
     #my-name {
-        font-size: @font-size-base + 26px;
+        font-size: @font-size-base + 20px;
     }
     #beta {
         blockquote {
             font-size: @font-size-base + 5px;
         }
     }
-    #github {
-        padding-right: 20px;
+    #work {
+        #fivepxl {
+            width: 130px;
+        }
+        #github {
+            width: 180px;
+        }
+        #xing {
+            font-size: 50px;
+        }
     }
 }
 
@@ -165,17 +189,28 @@ blockquote {
         margin-top: 50px;
         margin-bottom: 50px;
         #logo {
-            width: @logo-size + 100px;
+            width: @logo-size + 65px;
             margin-left: auto;
             margin-right: auto;
         }
     }
     #my-name {
-        font-size: @font-size-base + 18px;
+        font-size: @font-size-base + 16px;
     }
     #hello {
         &.row {
             padding: 30px;
+        }
+    }
+    #work {
+        #fivepxl {
+            width: 100px;
+        }
+        #github {
+            width: 140px;
+        }
+        #xing {
+            font-size: 40px;
         }
     }
 }
@@ -194,6 +229,17 @@ blockquote {
     #my-name {
         font-size: @font-size-base + 12px;
     }
+    #work {
+        #fivepxl {
+            width: 80px;
+        }
+        #github {
+            width: 100px;
+        }
+        #xing {
+            font-size: 30px;
+        }
+    }
 }
 
 /* XS */
@@ -211,7 +257,23 @@ blockquote {
     #my-name {
         font-size: @font-size-base + 6px;
     }
-    #fivepxl, #GitHub {
+    #fivepxl, #github, #xing {
         margin-bottom: 20px;
+    }
+    #work {
+        #fivepxl {
+            width: 80px;
+        }
+        #github {
+            width: 100px;
+        }
+        #xing {
+            font-size: 30px;
+        }
+    }
+    #projects {
+        ul {
+            margin-top: 80px;
+        }
     }
 }
