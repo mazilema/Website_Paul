@@ -6529,8 +6529,12 @@ blockquote {
     font-size: 25px;
   }
 }
+#wish-content {
+  font-family: 'Roboto Slab', serif;
+}
 #wishlist {
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 #wishlist h1 {
   margin-top: 30px;
@@ -6538,6 +6542,7 @@ blockquote {
 }
 #wishlist .list-group {
   font-size: 16px;
+  margin-top: 40px;
 }
 #wishlist .list-group a:hover {
   -webkit-animation: wishlist 0.2s 1;
@@ -6559,18 +6564,22 @@ blockquote {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes wishlist {
   0% {
+    padding-left: 15px;
     font-size: 16px;
   }
   100% {
+    padding-left: 25px;
     font-size: 18px;
   }
 }
 /* Standard syntax */
 @keyframes wishlist {
   0% {
+    padding-left: 15px;
     font-size: 16px;
   }
   100% {
+    padding-left: 25px;
     font-size: 18px;
   }
 }

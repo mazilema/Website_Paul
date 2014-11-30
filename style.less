@@ -315,14 +315,20 @@ blockquote {
     }
 }
 
+#wish-content {
+    font-family: @roboto-slab;
+}
+
 #wishlist {
     font-family: @montserrat;
+    font-size: 16px;
     h1 {
         margin-top: 30px;
         margin-bottom: 30px;
     }
     .list-group {
         font-size: 16px;
+        margin-top: 40px;
         a:hover {
             -webkit-animation: wishlist 0.2s 1; /* Chrome, Safari */
             -webkit-animation-iteration-count: 1;  /* Chrome, Safari, Opera */
@@ -340,12 +346,12 @@ blockquote {
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes wishlist {
-    0%   {font-size: 16px;}
-    100% {font-size: 18px;}
+    0%   {padding-left: 15px; font-size: 16px;}
+    100% {padding-left: 25px; font-size: 18px;}
 }
 
 /* Standard syntax */
 @keyframes wishlist {
-    0%   {font-size: 16px;}
-    100% {font-size: 18px;}
+    0%   {padding-left: 15px; font-size: 16px;}
+    100% {padding-left: 25px; font-size: 18px;}
 }
