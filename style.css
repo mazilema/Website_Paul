@@ -6529,6 +6529,9 @@ blockquote {
     font-size: 25px;
   }
 }
+#hohoho {
+  font-family: "grafolita-script", sans-serif;
+}
 #wish-content {
   font-family: 'Roboto Slab', serif;
 }
@@ -6543,6 +6546,9 @@ blockquote {
 #wishlist .list-group {
   font-size: 16px;
   margin-top: 40px;
+}
+#wishlist .list-group a {
+  color: #333;
 }
 #wishlist .list-group a:hover {
   -webkit-animation: wishlist 0.2s 1;

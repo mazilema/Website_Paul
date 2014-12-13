@@ -315,6 +315,10 @@ blockquote {
     }
 }
 
+#hohoho {
+    font-family: "grafolita-script",sans-serif;
+}
+
 #wish-content {
     font-family: @roboto-slab;
 }
@@ -329,13 +333,16 @@ blockquote {
     .list-group {
         font-size: 16px;
         margin-top: 40px;
-        a:hover {
-            -webkit-animation: wishlist 0.2s 1; /* Chrome, Safari */
-            -webkit-animation-iteration-count: 1;  /* Chrome, Safari, Opera */
-            -webkit-animation-fill-mode: forwards;  /* Chrome, Safari, Opera */
-            animation: wishlist 0.2s 1; /* Standard syntax */
-            animation-iteration-count: 1; /* Standard syntax */
-            animation-fill-mode: forwards; /* Standard syntax */
+        a {
+            color: #333;
+            &:hover {
+                -webkit-animation: wishlist 0.2s 1; /* Chrome, Safari */
+                -webkit-animation-iteration-count: 1;  /* Chrome, Safari, Opera */
+                -webkit-animation-fill-mode: forwards;  /* Chrome, Safari, Opera */
+                animation: wishlist 0.2s 1; /* Standard syntax */
+                animation-iteration-count: 1; /* Standard syntax */
+                animation-fill-mode: forwards; /* Standard syntax */
+            }
         }
         .list-group-item {
             border: 0;
