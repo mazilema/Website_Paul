@@ -6285,6 +6285,86 @@ button.close {
     display: none !important;
   }
 }
+/* Weihnachten */
+/* LG */
+/* MD */
+@media (min-width: 992px) and (max-width: 1200px) {
+  #wishlist h1 {
+    font-size: 34px;
+  }
+}
+/* SM */
+@media (min-width: 768px) and (max-width: 992px) {
+  #wishlist h1 {
+    font-size: 30px;
+  }
+}
+/* XS */
+@media (max-width: 768px) {
+  #wishlist h1 {
+    font-size: 25px;
+  }
+}
+#hohoho {
+  font-family: "grafolita-script", sans-serif;
+}
+#wish-content {
+  font-family: 'Roboto Slab', serif;
+}
+#wishlist {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+#wishlist h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#wishlist .list-group {
+  font-size: 16px;
+  margin-top: 40px;
+}
+#wishlist .list-group a {
+  color: #333;
+}
+#wishlist .list-group a:hover {
+  -webkit-animation: wishlist 0.2s 1;
+  /* Chrome, Safari */
+  -webkit-animation-iteration-count: 1;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation: wishlist 0.2s 1;
+  /* Standard syntax */
+  animation-iteration-count: 1;
+  /* Standard syntax */
+  animation-fill-mode: forwards;
+  /* Standard syntax */
+}
+#wishlist .list-group .list-group-item {
+  border: 0;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes wishlist {
+  0% {
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  100% {
+    padding-left: 25px;
+    font-size: 18px;
+  }
+}
+/* Standard syntax */
+@keyframes wishlist {
+  0% {
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  100% {
+    padding-left: 25px;
+    font-size: 18px;
+  }
+}
 .content-center {
   margin-left: auto;
   margin-right: auto;
@@ -6507,85 +6587,5 @@ blockquote {
   }
   #projects ul {
     margin-top: 80px;
-  }
-}
-/* Weihnachten */
-/* LG */
-/* MD */
-@media (min-width: 992px) and (max-width: 1200px) {
-  #wishlist h1 {
-    font-size: 34px;
-  }
-}
-/* SM */
-@media (min-width: 768px) and (max-width: 992px) {
-  #wishlist h1 {
-    font-size: 30px;
-  }
-}
-/* XS */
-@media (max-width: 768px) {
-  #wishlist h1 {
-    font-size: 25px;
-  }
-}
-#hohoho {
-  font-family: "grafolita-script", sans-serif;
-}
-#wish-content {
-  font-family: 'Roboto Slab', serif;
-}
-#wishlist {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-}
-#wishlist h1 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-#wishlist .list-group {
-  font-size: 16px;
-  margin-top: 40px;
-}
-#wishlist .list-group a {
-  color: #333;
-}
-#wishlist .list-group a:hover {
-  -webkit-animation: wishlist 0.2s 1;
-  /* Chrome, Safari */
-  -webkit-animation-iteration-count: 1;
-  /* Chrome, Safari, Opera */
-  -webkit-animation-fill-mode: forwards;
-  /* Chrome, Safari, Opera */
-  animation: wishlist 0.2s 1;
-  /* Standard syntax */
-  animation-iteration-count: 1;
-  /* Standard syntax */
-  animation-fill-mode: forwards;
-  /* Standard syntax */
-}
-#wishlist .list-group .list-group-item {
-  border: 0;
-}
-/* Chrome, Safari, Opera */
-@-webkit-keyframes wishlist {
-  0% {
-    padding-left: 15px;
-    font-size: 16px;
-  }
-  100% {
-    padding-left: 25px;
-    font-size: 18px;
-  }
-}
-/* Standard syntax */
-@keyframes wishlist {
-  0% {
-    padding-left: 15px;
-    font-size: 16px;
-  }
-  100% {
-    padding-left: 25px;
-    font-size: 18px;
   }
 }
