@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="style_v2.css">
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
+        <title>Paul Bergmeir | Webdesign &amp; Photography</title>
+        
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        
+
+        <!-- Fontawesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 2000);
+                        return false;
+                    }
+                }
+            });
+        });
+        </script>
+        <!--
+        <script src="//use.typekit.net/yck8bee.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        -->
+    </head>
+    <body>
+        <section class="full-page" id="intro">
+            <div class="content">
+                <img src="img/logo_big.png" alt="Logo" id="logo">
+            </div>
+            <div id="space-top"></div>
+            <a href="#down">
+                <div id="arrow-down" class="text-center">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle-o fa-stack-2x"></i>
+                        <i class="fa fa-chevron-down fa-stack-1x"></i>
+                    </span>
+                </div>
+            </a>
+        </section>
+        <section class="half-page" id="down">
+            <div class="container">
+                <h2 class="text-center" id="myname">Paul Bergmeir</h2>
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <blockquote>
+                            <p>
+                                &bdquo;Eine Website ist nie fertig.
+                                <br>Es gibt immer nur Beta.
+                                <br>Es gibt ganz viele Betas, aber keine fertige Website.
+                                <br>Wenn sie fertig ist muss man sie neu machen, denn dann gibt es neue Methoden.&ldquo;
+                            </p>
+                            <footer>Erik Spiekermann</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+        </section>
+        <section class="half-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div id="servus">Servus.
+                            <p>Ich heiße Paul Bergmeir, bin 20 Jahre alt, komme aus dem Münchner Norden und mache seit dem 01.09.13 bei <a href="//www.conexco.de" target="_blank">Conexco</a> die Ausbildung zum Mediengestalter / Frontend Developer.</p>
+                            <p>Ich habe mir die Herausforderung gestellt möglichst alles mit HTML und CSS (LESS) zu schreiben.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+        </section>
+        <section class="half-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-4 text-center">
+                        <img src="img/500px_black.png" alt="500px" id="fhpixel">
+                    </div>
+                    <div class="col-xs-12 col-lg-4 text-center">
+                        <img src="img/GitHub_Logo.png" alt="GitHub" id="github">
+                    </div>
+                    <div class="col-xs-12 col-lg-4 text-center">
+                        <img src="img/xing.png" alt="xing" id="xing">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fifth-page">
+            <div class="container" id="project">
+                <h4 class="text-center">Aktuell für neue Projekte verfügbar:</h4>
+                <div class="row" id="available">
+                    <div class="col-xs-4 text-center">
+                        <a href="mailto:project@paulbergmeir.de">
+                            <i class="fa fa-check-circle-o fa-2x text-success"></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <a href="mailto:project@paulbergmeir.de">
+                            <i class="fa fa-check-circle-o fa-2x text-warning"></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <i class="fa fa-times-circle-o fa-2x text-danger"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fifth-page">
+            <div class="container">
+                <div class="row" id="contact">
+                    <div class="col-xs-6 text-center">
+                        <a href="mailto:hallo@paulbergmeir.de" class="btn btn-primary">Kontakt</a>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <a href="impress.html" class="btn btn-primary">Impressum</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <hr class="divider"> -->
+    </body>
+</html>
