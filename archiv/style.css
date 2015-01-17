@@ -6285,8 +6285,92 @@ button.close {
     display: none !important;
   }
 }
-body {
+/* Weihnachten */
+/* LG */
+/* MD */
+@media (min-width: 992px) and (max-width: 1200px) {
+  #wishlist h1 {
+    font-size: 34px;
+  }
+}
+/* SM */
+@media (min-width: 768px) and (max-width: 992px) {
+  #wishlist h1 {
+    font-size: 30px;
+  }
+}
+/* XS */
+@media (max-width: 768px) {
+  #wishlist h1 {
+    font-size: 25px;
+  }
+}
+#hohoho {
+  font-family: "grafolita-script", sans-serif;
+}
+#wish-content {
   font-family: 'Roboto Slab', serif;
+}
+#wishlist {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+#wishlist h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#wishlist .list-group {
+  font-size: 16px;
+  margin-top: 40px;
+}
+#wishlist .list-group a {
+  color: #333;
+}
+#wishlist .list-group a:hover {
+  -webkit-animation: wishlist 0.2s 1;
+  /* Chrome, Safari */
+  -webkit-animation-iteration-count: 1;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation: wishlist 0.2s 1;
+  /* Standard syntax */
+  animation-iteration-count: 1;
+  /* Standard syntax */
+  animation-fill-mode: forwards;
+  /* Standard syntax */
+}
+#wishlist .list-group .list-group-item {
+  border: 0;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes wishlist {
+  0% {
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  100% {
+    padding-left: 25px;
+    font-size: 18px;
+  }
+}
+/* Standard syntax */
+@keyframes wishlist {
+  0% {
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  100% {
+    padding-left: 25px;
+    font-size: 18px;
+  }
+}
+.content-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  width: 100%;
 }
 hr {
   border: 0;
@@ -6299,177 +6383,209 @@ hr {
 hr.divider {
   width: 75%;
 }
-.full-page {
-  height: 100vh;
-}
-.half-page {
-  height: 50vh;
-}
-.fifth-page {
-  height: 20vh;
-}
-#space-top {
-  height: 25vh;
-}
-#logo {
-  height: 20vh;
-  display: block;
-  margin-top: 35vh;
-  margin-left: auto;
-  margin-right: auto;
-}
-section {
-  width: 100%;
-  display: table;
-  margin: 0;
-  max-width: none;
-  background-color: #fff;
-}
-section:nth-of-type(2n) {
-  background-color: #f5f5f5;
-}
-#arrow-down {
-  margin-right: auto;
-  margin-left: auto;
-  width: 50px;
-  -webkit-animation: arrow 5s infinite;
-  /* Chrome, Safari */
-  animation: arrow 5s infinite;
-  /* Standard syntax */
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  /* Chrome, Safari, Opera */
-  /* Standard syntax */
-}
-@-webkit-keyframes arrow {
-  0% {
-    margin-top: 2vh;
-    color: #cccccc;
-  }
-  25% {
-    margin-top: 4vh;
-    color: #999999;
-  }
-  50% {
-    margin-top: 2vh;
-    color: #cccccc;
-  }
-  75% {
-    margin-top: 4vh;
-    color: #999999;
-  }
-  100% {
-    margin-top: 2vh;
-    color: #cccccc;
-  }
-}
-@keyframes arrow {
-  0% {
-    margin-top: 2vh;
-    color: #cccccc;
-  }
-  25% {
-    margin-top: 4vh;
-    color: #999999;
-  }
-  50% {
-    margin-top: 2vh;
-    color: #cccccc;
-  }
-  75% {
-    margin-top: 4vh;
-    color: #999999;
-  }
-  100% {
-    margin-top: 2vh;
-    color: #cccccc;
-  }
-}
-#myname {
+#my-name {
   font-family: 'Montserrat', sans-serif;
-  margin-top: 35px;
 }
-blockquote {
+.content {
   font-family: 'Roboto Slab', serif;
-  font-size: 1.2em;
-  border-left: 0;
-  margin-top: 3vh;
+  font-size: 17px;
+  text-align: left;
 }
-#servus {
-  font-size: 1.2em;
-  line-height: 145%;
-  padding-top: 15vh;
+#beta blockquote footer {
+  font-size: 15px;
 }
-#me {
-  font-size: 1.2em;
-  padding-top: 80px;
+#hello a {
+  text-decoration: none;
 }
-blockquote {
-  padding: 10px 0;
+#hello.row,
+#work.row,
+#projects.row {
+  padding: 15px;
 }
-#fhpixel,
-#github,
-#xing {
-  width: 15vw;
-}
-.btn-primary {
-  padding: 12px 22px;
+.btn {
   border-radius: 0;
-  font-size: 1.3em;
-  background-color: #333333;
-  border: 0;
-  color: #fff;
+}
+#contact {
+  margin-bottom: 20px;
+}
+#contact .btn {
+  margin: 20px 20px 10px;
+  font-size: 16px;
+  padding: 10px 15px;
   font-family: 'Montserrat', sans-serif;
 }
-#available .text-warning,
-#available .text-danger {
+#projects ul {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+#projects ul li {
+  padding: 0 20px;
+}
+#projects #projects-text {
+  display: inline-block;
+}
+#projects #project-success .text-success {
+  color: #5CB85C;
+}
+#projects #project-success .text-warning {
+  color: #ec971f;
   opacity: 0.5;
 }
-#asap .text-success,
-#asap .text-danger {
+#projects #project-success .text-danger {
+  color: #D9534F;
   opacity: 0.5;
 }
-#not-available .text-success,
-#not-available .text-warning {
+#projects #project-warning .text-success {
+  color: #5CB85C;
   opacity: 0.5;
+}
+#projects #project-warning .text-warning {
+  color: #ec971f;
+}
+#projects #project-warning .text-danger {
+  color: #D9534F;
+  opacity: 0.5;
+}
+#projects #project-danger .text-success {
+  color: #5CB85C;
+  opacity: 0.5;
+}
+#projects #project-danger .text-warning {
+  color: #ec971f;
+  opacity: 0.5;
+}
+#projects #project-danger .text-danger {
+  color: #D9534F;
+}
+#xing {
+  font-family: Helvetica;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 78px;
+  color: #151013;
+}
+blockquote {
+  border-left: 0;
+}
+#impressum {
+  font-size: 16px;
+}
+#impressum .list-unstyled {
+  margin-top: 30px;
 }
 /* LG */
+@media (min-width: 1200px) {
+  #logo-bg {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  #logo-bg #logo {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #hello {
+    font-size: 19px;
+  }
+  #hello.row {
+    padding: 30px;
+  }
+  #my-name {
+    font-size: 34px;
+  }
+  #beta blockquote {
+    font-size: 19px;
+  }
+  #work #fivepxl {
+    width: 130px;
+  }
+  #work #github {
+    width: 180px;
+  }
+  #work #xing {
+    font-size: 50px;
+  }
+}
 /* MD */
+@media (min-width: 992px) and (max-width: 1200px) {
+  #logo-bg {
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
+  #logo-bg #logo {
+    width: 215px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #my-name {
+    font-size: 30px;
+  }
+  #hello.row {
+    padding: 30px;
+  }
+  #work #fivepxl {
+    width: 100px;
+  }
+  #work #github {
+    width: 140px;
+  }
+  #work #xing {
+    font-size: 40px;
+  }
+}
 /* SM */
+@media (min-width: 768px) and (max-width: 992px) {
+  #logo-bg {
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
+  #logo-bg #logo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #my-name {
+    font-size: 26px;
+  }
+  #work #fivepxl {
+    width: 80px;
+  }
+  #work #github {
+    width: 100px;
+  }
+  #work #xing {
+    font-size: 30px;
+  }
+}
 /* XS */
-/*@media (max-width: @screen-sm) {*/
-@media (min-width: 1px) {
-  #space-top {
-    height: 21vh;
+@media (max-width: 768px) {
+  #logo-bg {
+    margin-top: 50px;
+    margin-bottom: 15px;
   }
-  #servus {
-    padding: 7vh 2vw 0vh;
+  #logo-bg #logo {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  blockquote {
-    padding-left: 2vw;
-    padding-right: 2vw;
+  #my-name {
+    font-size: 20px;
   }
-  #fhpixel,
+  #fivepxl,
   #github,
   #xing {
-    width: 30vw;
-    margin-top: 6vh;
+    margin-bottom: 20px;
   }
-  #contact {
-    margin-top: 7vh;
+  #work #fivepxl {
+    width: 80px;
   }
-  #project h4 {
-    margin-top: 3vh;
-    font-size: 1.2em;
+  #work #github {
+    width: 100px;
   }
-  #project i {
-    margin-top: 3vh;
-    font-size: 3em;
+  #work #xing {
+    font-size: 30px;
   }
-  #project i.text-warning {
-    color: #e69500;
-  }
-  #project i.text-success {
-    color: #488e49;
+  #projects ul {
+    margin-top: 80px;
   }
 }
