@@ -1,10 +1,12 @@
 @import "bower_components/bootstrap/less/bootstrap.less";
 
+/* GLOBAL */
 @montserrat: 'Montserrat', sans-serif;
 @roboto-slab: 'Roboto Slab', serif;
 
 body {
-    font-family: @roboto-slab; 
+    font-family: "proxima-nova";
+    font-weight: 400;
 }
 
 hr { 
@@ -27,6 +29,10 @@ section {
     margin: 0;
     max-width: none;
     background-color: #fff;
+}
+
+.half-height {
+    border: 1px solid red;
 }
 
 #arrow-down {
@@ -57,44 +63,11 @@ section {
     }
 }
 
-/*#myname {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 35px;
-}*/
-
 blockquote {
     font-family: @roboto-slab;
     font-size: 1.2em;
     border-left: 0;
     margin-top: 3vh;
-}
-
-#servus {
-    font-size: 1.2em;
-    line-height: 145%;
-    padding-top: 15vh;
-}
-
-#about-me {
-    height: 100vh;
-    padding-top: 17vh;
-}
-
-#me {
-    font-size: 1.2em;
-    padding-top: 80px;
-}
-
-/*.full-height {
-    height: 100vh;
-}*/
-
-.half-height {
-/*    height: 50vh;*/
-    border: 1px solid red;
-}
-
-blockquote {
     padding: 10px 0;
 }
 
@@ -129,81 +102,123 @@ blockquote {
         opacity: 0.5;
     }
 }
+/* END GLOBAL */
+
 
 /* XS */
-/*@media (max-width: @screen-sm) {*/
-@media (min-width: 1px) {
-    #logo {
-        height: 20vh;
-        display: block;
-        margin-top: 40vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #intro {
-        height: 100vh;
-    }
-    #space-top {
-        height: 21vh;
-    }
-    #quote {
-        height: 100vh;
-        padding-top: 28vh;
-    }
+#logo {
+    height: 20vh;
+    display: block;
+    margin-top: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro {
+    height: 100vh;
+}
+
+#space-top-intro {
+    height: 21vh;
+}
+
+#space-top-quote {
+    height: 5vh;
+}
+
+#quote {
+    height: 100vh;
+    padding-top: 13vh;
+}
+
+#quote-svg {
+    width: 10vh;
+    margin-bottom: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#about-svg {
+    width: 10vh;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.about-me {
+    height: 100vh;
+    padding-top: 10vh;
     #servus {
         padding: 7vh 2vw 0vh;
-    }
-    blockquote {
-        padding-left: 2vw;
-        padding-right: 2vw;
-    }
-    #fhpixel, #github, #xing {
-        width: 30vw;
-        margin-top: 5vh;
-    }
-    #contact {
-        margin-top: 9vh;
-        margin-bottom: 5vh;
-    }
-    #project {
-        padding-top: 2vh;
-        h4 {
-            margin-top: 3vh;
-            font-size: 1.2em;
-        }
-        i {
-            margin-top: 3vh;
-            font-size: 3em;
-            &.text-warning {
-                color: darken(#FFA500, 5%);
-            }
-            &.text-success {
-                color: lighten(#3C763D, 7%);
-            }
-        }
-    }
-    #network {
-        margin-top: 3vh;
-    }
-    #network, #project {
-        height: 50vh;
+        font-size: 1.2em;
+        line-height: 145%;
     }
 }
 
+blockquote {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#fhpixel, #github, #xing {
+    width: 30vw;
+    margin-top: 5vh;
+}
+
+#fhpixel {
+    height: auto;
+}
+
+#contact {
+    margin-top: 9vh;
+    margin-bottom: 5vh;
+}
+
+#project {
+    padding-top: 2vh;
+    h4 {
+        margin-top: 3vh;
+        font-size: 1.2em;
+    }
+    i {
+        margin-top: 3vh;
+        font-size: 3em;
+        &.text-warning {
+            color: darken(#FFA500, 5%);
+        }
+        &.text-success {
+            color: lighten(#3C763D, 7%);
+        }
+    }
+}
+
+#network {
+    margin-top: 3vh;
+}
+
+#network, #project {
+    height: 50vh;
+}
+
 /* SM */
-@media (min-width: @screen-sm) {
-    #space-top {
+@media (min-width: @screen-sm-min) {
+    #space-top-intro {
         height: 27vh;
     }
     #quote {
+        padding-top: 38vh;
+    }
+    #about-me {
         padding-top: 30vh;
     }
 }
 
 /* MD */
-@media (min-width: @screen-md) {
+@media (min-width: @screen-md-min) {
 }
 
 /* LG */
-@media (min-width: @screen-lg) {   
+@media (min-width: @screen-lg-min) {   
 }
