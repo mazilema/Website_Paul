@@ -432,6 +432,7 @@ body {
     webkit-tap-highlight-color: fade(@dark, 20%);
 }
 
+/* Ghost Fonticon */
 /* Import the font file with the icons in it */
 @font-face {
     font-family: "casper-icons";
@@ -462,3 +463,35 @@ content of the :before pseudo element. Like a boss. */
     content: "\f600";
     font-size: 12px;
 }
+
+/* 500px Fonticon */
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?17005310');
+    src: url('../fonts/fontello.eot?17005310#iefix') format('embedded-opentype'),
+        url('../fonts/fontello.woff?17005310') format('woff'),
+        url('../fonts/fontello.ttf?17005310') format('truetype'),
+        url('../fonts/fontello.svg?17005310#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    margin-left: .2em;
+}
+ 
+.icon-fivehundredpx:before { content: '\e800'; } /* '' */
