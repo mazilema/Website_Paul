@@ -84,5 +84,12 @@ $(document).ready(function(){
             });
         });
     }
-
+    if ($(window).width() <= 1024) {
+        $('#design-hover').empty();
+        $('#design-hover').append('<img class="img-responsive" src="_resources/own/img/svg/design-colored.svg" alt="Foto">');
+        $('#code-hover').empty();
+        $('#code-hover').append('<img class="img-responsive" src="_resources/own/img/svg/code-colored.svg" alt="Foto">');
+        $('#photo-hover').empty();
+        $('#photo-hover').append('<img class="img-responsive" src="_resources/own/img/svg/photo-colored.svg" alt="Foto">');
+    }
 });
