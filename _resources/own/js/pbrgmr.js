@@ -8,7 +8,7 @@ $(document).ready(function(){
     var aboutCenterOuter = $('#about').height();
 
     $('.vp-center').css({
-        'padding-top' : ((contactCenterOuter / 2) - (contactCenterInner / 2))
+        'padding-top' : ((aboutCenterOuter / 2) - (aboutCenterInner / 2))
     });
 
     // center content of contact
@@ -37,13 +37,15 @@ $(document).ready(function(){
         var opacityFull = 1;
 
         $('.portfolio-design').hover(function() {
-            $("#design-hover").attr("src","_resources/own/img/svg/design-colored.svg");
+            $('#design-hover').empty();
+            $('#design-hover').append('<img class="img-responsive" src="_resources/own/img/svg/design-colored.svg" alt="Foto">');
             $('.portfolio-code, .portfolio-photo, .html, .css, .javascript, .php, .imovie').css({
                 'opacity': opacityHalf,
                 'transition': '0.3s'
             });
         }, function() {
-            $("#design-hover").attr("src","_resources/own/img/svg/design.svg");
+            $('#design-hover').empty();
+            $('#design-hover').append('<img class="img-responsive" src="_resources/own/img/svg/design.svg" alt="Foto">');
             $('.portfolio-code, .portfolio-photo, .html, .css, .javascript, .php, .imovie').css({
                 'opacity': opacityFull,
                 'transition': '0.3s'
@@ -51,13 +53,15 @@ $(document).ready(function(){
         });
 
         $('.portfolio-code').hover(function() {
-            $("#code-hover").attr("src","_resources/own/img/svg/code-colored.svg");
+            $('#code-hover').empty();
+            $('#code-hover').append('<img class="img-responsive" src="_resources/own/img/svg/code-colored.svg" alt="Foto">');
             $('.portfolio-design, .portfolio-photo, .photoshop, .illustrator, .indesign, .imovie').css({
                 'opacity': opacityHalf,
                 'transition': '0.3s'
             });
         }, function() {
-            $("#code-hover").attr("src","_resources/own/img/svg/code.svg");
+            $('#code-hover').empty();
+            $('#code-hover').append('<img class="img-responsive" src="_resources/own/img/svg/code.svg" alt="Foto">');
             $('.portfolio-design, .portfolio-photo, .photoshop, .illustrator, .indesign, .imovie').css({
                 'opacity': opacityFull,
                 'transition': '0.3s'
@@ -65,13 +69,15 @@ $(document).ready(function(){
         });
 
         $('.portfolio-photo').hover(function() {
-            $("#photo-hover").attr("src","_resources/own/img/svg/photo-colored.svg");
+            $('#photo-hover').empty();
+            $('#photo-hover').append('<img class="img-responsive" src="_resources/own/img/svg/photo-colored.svg" alt="Foto">');
             $('.portfolio-design, .portfolio-code, .illustrator, .indesign, .html, .css, .javascript, .php').css({
                 'opacity': opacityHalf,
                 'transition': '0.3s'
             });
         }, function() {
-            $("#photo-hover").attr("src","_resources/own/img/svg/photo.svg");
+            $('#photo-hover').empty();
+            $('#photo-hover').append('<img class="img-responsive" src="_resources/own/img/svg/photo.svg" alt="Foto">');
             $('.portfolio-design, .portfolio-code, .illustrator, .indesign, .html, .css, .javascript, .php').css({
                 'opacity': opacityFull,
                 'transition': '0.3s'

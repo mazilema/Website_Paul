@@ -5,6 +5,11 @@ body {
     font-family: $fallback-font;
 }
 
+object {
+    height: 100%;
+    width: 100%;
+}
+
 #hey {
     height: 100vh;
     font-family: $proxima-nova, $fallback-font;
