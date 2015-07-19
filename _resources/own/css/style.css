@@ -5636,7 +5636,8 @@ button.close {
   .hidden-print {
     display: none !important; } }
 body {
-  font-family: "Helvetica"; }
+  font-family: source-sans-pro, "Helvetica";
+  font-size: 2rem; }
 
 object {
   height: 100%;
@@ -5704,11 +5705,17 @@ p {
     border: none;
     box-shadow: none; }
 
-h2, h3, h4, h5, h6 {
+h1:not(#hey), h2:not(#hey), h3:not(#hey), h4:not(#hey), h5:not(#hey), h6:not(#hey) {
   font-family: "Bitter", serif; }
+
+.btn-back {
+  margin-top: 30px; }
 
 #portfolio hr {
   margin-top: 10px; }
+
+#impress {
+  margin-top: 15px; }
 
 [class*=portfolio-] {
   margin-top: 30px;
@@ -5717,13 +5724,30 @@ h2, h3, h4, h5, h6 {
     padding-top: 15px;
     padding-bottom: 15px; }
 
-@media (min-width: 992px) {
-  #hey {
-    color: #fff; }
-
+@media (max-width: 991px) {
   #hey-bg {
     background-image: url("../img/hey-bg.jpg");
     background-size: cover; } }
+#hey {
+  color: #fff; }
+
+@media (min-width: 992px) {
+  #hey-bg {
+    background-image: url("../img/hey-bg.jpg");
+    background-size: cover; }
+
+  #about {
+    -webkit-animation: logo 2s;
+    /* Chrome, Safari */
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation: logo 2s;
+    /* Standard syntax */
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    /* Standard syntax */ }
+  @-webkit-keyframes logo {} }
 @media (min-width: 1199px) {
   #skills {
     padding-top: 50px;

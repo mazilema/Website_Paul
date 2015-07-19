@@ -15,6 +15,9 @@ $(document).ready(function(){
     var contactCenterInner = $('.vp-center').height();
     var contactCenterOuter = $('#contact').height();
 
+    console.log(contactCenterInner);
+    console.log(contactCenterOuter);
+
     $('.vp-center').css({
         'padding-top' : ((contactCenterOuter / 2) - (contactCenterInner / 2))
     });

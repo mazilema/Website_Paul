@@ -2,7 +2,8 @@
 @import 'own-var.scss';
 
 body {
-    font-family: $fallback-font;
+    font-family: $source-sans-pro, $fallback-font;
+    font-size: 2rem;
 }
 
 object {
@@ -92,14 +93,24 @@ p {
     }
 }
 
-h2, h3, h4, h5, h6 {
-    font-family: $bitter, serif;
+h1, h2, h3, h4, h5, h6 {
+    &:not(#hey) {
+        font-family: $bitter, serif;
+    }
+}
+
+.btn-back {
+    margin-top: 30px;
 }
 
 #portfolio {
     hr {
         margin-top: 10px;
     }
+}
+
+#impress {
+    margin-top: 15px;
 }
 
 [class*=portfolio-] {
@@ -111,13 +122,49 @@ h2, h3, h4, h5, h6 {
     }
 }
 
-@media (min-width: $screen-md-min) {
-    #hey {
-        color: #fff;
-    }
+@media (max-width: $screen-sm-max) {
     #hey-bg {
         background-image: url('../img/hey-bg.jpg');
         background-size: cover;
+    }
+}
+
+#hey {
+        color: #fff;
+    }
+
+@media (min-width: $screen-md-min) {
+    #hey-bg {
+        background-image: url('../img/hey-bg.jpg');
+        background-size: cover;
+    }
+    #about {
+        -webkit-animation: logo 2s; /* Chrome, Safari */
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation: logo 2s; /* Standard syntax */
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes logo {
+            0%   {
+
+            }
+            100% {
+
+            }
+        }
+        
+        /* Standard syntax */
+        @keyframes logo {
+            0%   {
+
+            }
+            100% {
+
+            }
+        }
     }
 }
 
